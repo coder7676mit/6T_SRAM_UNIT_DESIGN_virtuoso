@@ -454,14 +454,14 @@ Timing diagram for Read "0" operation:
 
 Butterfly curve for Hold state: 
 <p align="center">
-  <img src="vertopal_f4e039de98fe4b5e9e2edb8d44ba6bdc/media/image16.png" alt="Image" width="600">
+  <img src="images/hold.png" alt="Image" width="600">
 </p>
 
 
 ```
  SNM = min (max(SNM1),max( SNM2) )
-= min (578.869mV, 585.075mV)
-= 578.869mV**
+= min (304mV, 287.85mV)
+= 287.25mV**
 ```
 
 -----------------------------------
