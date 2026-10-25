@@ -1,7 +1,7 @@
-# Design of 4X4 16-bit SRAM Memory Array Using Cadence tool-chain
+# Design Of 6T SRAM cell and its subcircuits in GPDK 90nm
 # About
 
-This is a project report submitted by Vardhan Suroshi to Prof. Mahesh Awati, Department of Electronics and Communication Engineering PES UNIVERSITY in the 6th semester for the course "Memory Design and Testing" (Course Code: UE20EC343) during the academic year 2022-23 The project involves the design of a 4X4 SRAM Memory Array using Cadence Virtuoso built using GPDK 180nm
+This project involves the design of a SRAM Memory Array using Cadence Virtuoso built using GPDK 90nm. Currently 6T SRAM And its subcircuits are implemented which would be extended to a 4*4 memory array
 
 
 # Table of Contents
@@ -25,7 +25,7 @@ This is a project report submitted by Vardhan Suroshi to Prof. Mahesh Awati, Dep
   - [SRAM Cell along with all the Peripheral Devices](#5-sram-cell-along-with-all-the-peripheral-devices)
 - [4x4 Memory Array](#4x4-memory-array)
 - [Conclusion](#conclusion)
-- [Acknowledgment](#acknowledgment)
+- 
 
 
 
