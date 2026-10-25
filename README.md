@@ -130,7 +130,7 @@ equal voltages even if they are not pre-charged to Vdd.
    + **Bias transistors** that pull each of the bit lines to Vdd.
 
 <p align="center">
-  <img src="vertopal_f4e039de98fe4b5e9e2edb8d44ba6bdc/media/image22.png" alt="Image" width="600">
+  <img src="images/precharge.png" alt="Image" width="600">
 </p>
 
 ---------
@@ -139,7 +139,7 @@ equal voltages even if they are not pre-charged to Vdd.
 - An isolation circuit is used to isolate the sense amplifier from the bit lines once a small change on the bit lines is detected.
 
 <p align="center">
-  <img src="vertopal_f4e039de98fe4b5e9e2edb8d44ba6bdc/media/image23.png" alt="Image" width="600">
+  <img src="images/isolation.png" alt="Image" width="600">
 </p>
 
 ----------------
@@ -149,7 +149,7 @@ equal voltages even if they are not pre-charged to Vdd.
 - The read circuitry includes a sense amplifier, a crucial component that amplifies the small voltage swing on bit lines to recognizable logic levels. This amplification is essential for reliable data interpretation during read operations.
 
 <p align="center">
-  <img src="https://github.com/VardhanSuroshi/Memory-Design-And-Testing/assets/132068498/20d01ab4-30c0-4812-b3c7-1a342ab89898" alt="Image" width="600">
+  <img src="images/sense.png" alt="Image" width="600">
 </p>
 
 
@@ -160,7 +160,7 @@ equal voltages even if they are not pre-charged to Vdd.
 - Write driver circuits play a vital role in the writing process. They force one of the bit-lines to zero while maintaining the pre-charged value on the other bit-line. This controlled manipulation ensures accurate data storage within the SRAM cell.
 
 <p align="center">
-  <img src="vertopal_f4e039de98fe4b5e9e2edb8d44ba6bdc/media/image25.png" alt="Image" width="600">
+  <img src="images/write_driver.png" alt="Image" width="600">
 </p>
 
 
@@ -172,7 +172,7 @@ equal voltages even if they are not pre-charged to Vdd.
 - The row and column (or groups of columns) to be selected within the storage array are determined through the decoding of binary address information. This addressing mechanism ensures precise access to the desired data within the SRAM architecture.
 
 <p align="center">
-  <img src="https://github.com/VardhanSuroshi/Memory-Design-And-Testing/assets/132068498/ec9339af-7f44-495b-a531-fc71a5b6b892" alt="Image" width="600">
+  <img src="images/decoder.png" alt="Image" width="600">
 </p>
 
 
@@ -184,7 +184,7 @@ equal voltages even if they are not pre-charged to Vdd.
 - This is the single-column SRAM block with all the peripheral devices. 
 
 <p align="center">
-  <img src="vertopal_f4e039de98fe4b5e9e2edb8d44ba6bdc/media/image26.png" alt="Image" width="600">
+  <img src="images/sram_final.png" alt="Image" width="600">
 </p>
 
 
@@ -204,7 +204,7 @@ In this section, presents the design methodology followed during the design of p
 ## SRAM Cell Design 
 
 <p align="center">
-  <img src="vertopal_f4e039de98fe4b5e9e2edb8d44ba6bdc/media/image21.png" alt="Image" width="600">
+  <img src="images/sram.png" alt="Image" width="600">
 </p>
 
 
@@ -300,8 +300,8 @@ The stability of the SRAM cell can be described by the 'Butterfly curve' which i
 Butterfly curve for SRAM Cell:
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
-    <img src="vertopal_f4e039de98fe4b5e9e2edb8d44ba6bdc/media/image13.png" alt="Image 2" style="width: 40%;">
-    <img src="vertopal_f4e039de98fe4b5e9e2edb8d44ba6bdc/media/image14.png" alt="Image 3" style="width: 40%;">
+    <img src="images/image13.png" alt="Image 2" style="width: 40%;">
+    <img src="images/image14.png" alt="Image 3" style="width: 40%;">
 </div>
 
 
@@ -448,7 +448,7 @@ Timing diagram for Read "0" operation:
 
 
 <p align="center">
-  <img src="vertopal_f4e039de98fe4b5e9e2edb8d44ba6bdc/media/image15.png" alt="Image" width="600">
+  <img src="images/hold_cir.png" alt="Image" width="600">
 </p>
 
 
@@ -470,20 +470,20 @@ Butterfly curve for Hold state:
 
 
 <p align="center">
-  <img src="vertopal_f4e039de98fe4b5e9e2edb8d44ba6bdc/media/image17.png" alt="Image" width="600">
+  <img src="images/read_stab_cir.png" alt="Image" width="600">
 </p>
 
 
 Butterfly curve for Read state
 
 <p align="center">
-  <img src="vertopal_f4e039de98fe4b5e9e2edb8d44ba6bdc/media/image18.png" alt="Image" width="600">
+  <img src="images/read_stab.png" alt="Image" width="600">
 </p>
 
 ```
  SNM = min (max(SNM1),max( SNM2) )
- = min (225.417mV, 218.623mV)
- = 218.623 mV
+ = min (76mV, 92mV)
+ = 92 mV
 ```
 
 
@@ -548,7 +548,7 @@ The circuit took 86.17ps to sense the 200mV sense margin.
 Schematic of SRAM Architecture with all the peripheral devices connected.
 
 <p align="center">
-  <img src="vertopal_f4e039de98fe4b5e9e2edb8d44ba6bdc/media/image26.png" alt="Image" width="600">
+  <img src="images/sram_final.png" alt="Image" width="600">
 </p>
 
 The timing diagram for SRAM Architecture for Wrtie logic "1" operation followed by read logic "1" and write logic "0" followed by read logic "0".
@@ -563,7 +563,7 @@ The timing diagram for SRAM Architecture for Wrtie logic "1" operation followed 
 
 # Conclusion :
 
-Through this project, we have learnt how to design, simulate, and analyse the SRAM Architecture { 6T SRAM cell, Pre-charge circuit, Isolation Circuit, Sense amplifier and Write driver circuit) working on  GPDK 180 nm technology using Cadence tool-chain. We have analysed the Static Noise margins, and latency for peripheral circuits. Finally, a 4x4 Memory array was designed and simulations were performed.
+Through this project, we have learnt how to design, simulate, and analyse the SRAM Architecture { 6T SRAM cell, Pre-charge circuit, Isolation Circuit, Sense amplifier and Write driver circuit) working on  GPDK 90 nm technology using Cadence tool-chain. We have analysed the Static Noise margins, and latency for peripheral circuits. Finally, a 4x4 Memory array was designed and simulations were performed.
 The project has captured enough details of the entire design, test, and simulation phase and meets its project objective. 
 
 . 
